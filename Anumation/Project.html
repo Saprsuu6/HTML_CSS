@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style.css">
+        <title>Animations</title>
+        <style>
+            .background>div:nth-child(9)>div>div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .background>div:nth-child(9)>div>div>div{
+                width: 50px;
+                height: 50px;
+                position: relative;
+            }
+            .animation9_general{
+                height: 18px;
+                width: 18px;
+                border-radius: 10px;
+                position: absolute;
+                transform-origin: center center;
+            }
+            div.animation9>div:first-child{
+                margin: 30px 0 0 5px;
+                background-color: rgb(255, 0, 191);
+                transform-origin: center center;
+            }
+            div.animation9>div:nth-child(2){
+                margin: 30px 0 0 25px;
+                background-color: rgb(162, 0, 255);
+                animation-delay: 0.1s;
+            }
+            .animation9_1{
+                animation-direction: alternate-reverse;
+            }
+            .animation9_2{
+                animation-name: animation9_1;
+                animation-duration: 800ms;
+                animation-timing-function: ease-in-out;
+            }
+            .animation9{
+                animation-name: animation9;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-direction: normal;
+            }
+            @keyframes animation9{
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(720deg);
+                }
+            }
+            @keyframes animation9_1{
+                0%{
+                    transform: scale(1)
+                }
+                100%{
+                    transform: scale(0)
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="background">
+            <div>
+                <p>Loading 1</p>
+                <div>
+                    <div>
+                        <div class="animation1_1 animation1_general general"></div>
+                        <div class="animation1_2 animation1_general general"></div>
+                        <div class="animation1_3 animation1_general general"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Loading 2</p>
+                <div>
+                    <div>
+                        <div class="animation2_1 animation2_general general"></div>
+                        <div class="animation2_2 animation2_general general"></div>
+                        <div class="animation2_3 animation2_general general"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Loading 3</p>
+                <div>
+                    <div>
+                        <div class="animation3_1 animation3_general general"></div>
+                        <div class="animation3_2 animation3_general general"></div>
+                        <div class="animation3_3 animation3_general general"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Loading 4</p>
+                <div>
+                    <div>
+                        <div class="animation4 general">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Loading 5</p>
+                <div>
+                    <div>
+                        <div class="animation5 general">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Loading 6</p>
+                <div>
+                    <div>
+                        <p>Loading...</p>
+                        <div class="animation6 general"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Loading 7</p>
+                <div>
+                    <div>
+                        <div class="animation7 general"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Loading 8</p>
+                <div>
+                    <div>
+                        <div class="animation8 general"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Loading 9</p>
+                <div>
+                    <div>
+                        <div class="animation9 general">
+                            <div class="animation9_1 animation9_2 animation9_general general"></div>
+                            <div class="animation9_2 animation9_general general"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Loading 10</p>
+                <div>
+                    <div>
+                        <div class="animation10 general"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

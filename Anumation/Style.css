@@ -1,0 +1,366 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.general{
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.background{
+    display: flex;
+    flex-wrap: wrap;
+}
+.background>div{
+    background-color: rgb(216, 216, 216);
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
+    width: 150px;
+    height: 130px;
+}
+.background>div>div{
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+.background>div:first-child>div>div{
+    width: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.background>div:first-child>div>div>div{
+    background-color: rgb(0, 204, 255);
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.animation1_1{
+    animation-delay: 0s;
+}
+.animation1_2{
+    animation-delay: 0.2s;
+}
+.animation1_3{
+    animation-delay: 0.4s;
+}
+.animation1_general{
+    animation-name: animation1;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+}
+@keyframes animation1{
+    0% {
+        height: 15px;
+        background-color: rgb(0, 204, 255);
+    }
+    100% {
+        height: 45px;
+        background-color: rgb(0, 255, 170);
+    }
+}
+
+.background>div:nth-child(2)>div>div{
+    width: 90px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.background>div:nth-child(2)>div>div>div{
+    background-color: rgb(179, 255, 0);
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.animation2_1{
+    animation-delay: 0s;
+    margin-right: 5px;
+}
+.animation2_2{
+    animation-delay: 0.3s;
+}
+.animation2_3{
+    animation-delay: 0.6s;
+    margin-left: 5px;
+}
+.animation2_general{
+    animation-name: animation2;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animation2{
+    0% {
+        width: 15px;
+        background-color: rgb(179, 255, 0);
+    }
+    100% {
+        width: 45px;
+        background-color: rgb(229, 255, 0);
+    }
+}
+
+.background>div:nth-child(3)>div>div{
+    width: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.background>div:nth-child(3)>div>div>div{
+    background-color: rgb(255, 166, 0);
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.animation3_1{
+    animation-delay: 0s;
+    margin-right: 5px;
+}
+.animation3_2{
+    animation-delay: 0.2s;
+}
+.animation3_3{
+    animation-delay: 0.4s;
+    margin-left: 5px;
+}
+.animation3_general{
+    animation-name: animation3;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+}
+@keyframes animation3{
+    0% {
+        bottom: 0px;
+        background-color: rgb(255, 166, 0);
+    }
+    100% {
+        bottom: 30px;
+        background-color: rgb(255, 238, 0);
+    }
+}
+
+.background>div:nth-child(4)>div>div{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+}
+.background>div:nth-child(4)>div>div>div{
+    display: flex;
+    width: 45px;
+    background-color: rgb(0, 204, 255);
+    border-radius: 100px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.animation4>div:first-child{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 100px;
+}
+.animation4 div{
+    width: 6px;
+    height: 47px;
+    background-color: rgb(216, 216, 216);
+}
+.animation4>div:nth-child(2){
+    position: absolute;
+    transform: rotate(10deg);
+}
+.animation4>div:nth-child(3){
+    position: absolute;
+    transform: rotate(60deg);
+}
+.animation4>div:nth-child(4){
+    position: absolute;
+    transform: rotate(-70deg);
+}
+.animation4>div:nth-child(5){
+    position: absolute;
+    transform: rotate(-35deg);
+}
+.animation4{
+    animation-name: animation4;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+@keyframes animation4{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+.background>div:nth-child(5)>div>div{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+}
+.background>div:nth-child(5)>div>div>div{
+    display: flex;
+    width: 45px;
+    background-color: rgb(179, 255, 0);
+    border-radius: 100px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.animation5>div:first-child{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 100px;
+}
+.animation5>div:nth-child(2){
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: rgb(229, 255, 0);
+}
+.animation5{
+    animation-name: animation5;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+@keyframes animation5{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+.background>div:nth-child(6)>div>div{
+    width: 120px;
+    display: flex;
+    position: relative;
+}
+.background>div:nth-child(6)>div>div>p{
+    font-weight: 500;
+    margin: auto;
+}
+.background>div:nth-child(6)>div>div>div{
+    width: 30px;
+    height: 45px;
+    position: absolute;
+    margin-left: -15px;
+    background: 
+    linear-gradient(to left, rgb(216, 216, 216) 30%, rgba(172, 172, 172, 0))
+}
+.animation6{
+    animation-name: animation6;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+@keyframes animation6{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 110px;
+    }
+}
+
+.background>div:nth-child(7)>div>div{
+    width: 120px;
+    display: flex;
+    align-items: flex-start;
+}
+.background>div:nth-child(7)>div>div>div{
+    background-color: rgb(0, 204, 255);
+    width: 20px;
+    height: 20px;
+    border-radius: 1mm;
+    position: relative;
+}
+.animation7{
+    animation-name: animation7;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+}
+@keyframes animation7{
+    0% {
+        left: 0px;
+        background-color: rgb(0, 204, 255);
+    }
+    100% {
+        transform: rotate(720deg);
+        left: 95px;
+        background-color: rgb(0, 255, 170);
+    }
+}
+
+.background>div:nth-child(8)>div>div{
+    width: 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.background>div:nth-child(8)>div>div>div{
+    background-color: rgb(179, 255, 0);
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.animation8{
+    animation-name: animation8;
+    animation-duration: 600ms;
+    animation-timing-function: ease-out;
+}
+@keyframes animation8{
+    0% {
+        width: 15px;
+        height: 15px;
+        background-color: rgb(179, 255, 0);
+    }
+    100% {
+        width: 40px;
+        height: 20px;
+        background-color: rgb(229, 255, 0);
+    }
+}
+
+.background>div:nth-child(10)>div>div{
+    width: 120px;
+    display: flex;
+}
+.background>div:nth-child(10)>div>div>div{
+    background-color: rgb(0, 204, 255);
+    width: 20px;
+    height: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.animation10{
+    animation-name: animation10;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+}
+@keyframes animation10{
+    0% {
+        width: 20px;
+        left: 0px;
+        background-color: rgb(0, 204, 255);
+    }
+    100% {
+        width: 40px;
+        left: 75px;
+        background-color: rgb(0, 255, 170);
+    }
+}
